@@ -1,0 +1,27 @@
+.order
+    padding-bottom: 75px
+    background-color: $gray
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__item
+        position: relative
+        width: 22%   
+        z-index: 1
+        &:not(:last-child)::after
+            position: absolute
+            top: 141px
+            left: 144px
+            content: ''
+            display: block
+            height: 2px
+            width: 180px
+            border-top: 4px dashed $light
+            z-index: -1    
+    &__text
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        color: $dark
+         

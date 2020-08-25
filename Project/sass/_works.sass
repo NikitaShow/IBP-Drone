@@ -1,0 +1,102 @@
+.works
+    position: relative
+    padding-bottom: 75px
+    background-color: $gray
+    .container
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+.swiper-container
+
+    max-width: 920px        
+.swiper-slide
+    &__content
+        display: flex 
+    &__img
+        margin-right: 30px
+    &__description
+        max-width: 445px    
+    &__title
+        margin-bottom: 15px
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
+        line-height: 25px
+        color: $dark  
+    &__text
+        margin-bottom: 15px
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        color: $dark  
+    &__branch, &__device
+        margin-bottom: 7px
+        color: $dark
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        span
+            font-weight: 700
+            font-size: 20px
+            line-height: 25px
+    &__question
+        margin-top: 86px
+        margin-bottom: 25px
+        color: $dark
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        span
+            font-weight: 700
+            font-size: 20px
+            line-height: 25px
+.swiper-button
+    &-next, &-prev
+        width: 0
+        height: 0
+        outline: none
+        &::after
+            outline: none
+            display: none
+.arrow
+    &--prev
+        position: absolute
+        top: -131px
+        left: -11px
+        width: 65px
+        height: 65px
+        transform: rotate(180deg) 
+        box-shadow: 0px 5px 31px 1px rgba(255, 41, 0, 0.15)
+        svg path
+            stroke: transparent
+            fill: $primary
+        &:hover
+          background: linear-gradient(90deg, #FF401B 0%, #FF703F 100%)
+        &:hover svg path
+            stroke: transparent
+            fill: $white            
+    &--next
+        position: absolute
+        top: -131px
+        left: -56px
+        width: 65px
+        height: 65px
+        box-shadow: 0px 5px 31px 1px rgba(255, 41, 0, 0.15)
+        svg path
+            stroke: transparent
+            fill: $primary
+        &:hover
+          background: linear-gradient(90deg, #FF401B 0%, #FF703F 100%)
+        &:hover svg path
+            stroke: transparent
+            fill: $white 
+
+
+        
+        
+
+
+

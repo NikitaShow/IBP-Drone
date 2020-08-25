@@ -1,0 +1,74 @@
+.equipment
+    padding-bottom: 150px
+    background-color: $gray
+.device
+    &__drone
+        position: relative
+        max-width: 350px
+        padding: 65px 26px 52px 25px
+        background: $pink
+        border-radius: 10px
+        margin-bottom: 17px
+        &:hover .device__title 
+            opacity: 0
+        &:hover .device__copter
+            opacity: 0
+        &:hover .device__characteristic
+            opacity: 1       
+    &__title
+        opacity: 1
+        margin-bottom: 55px
+        text-align: center
+        font-weight: 700
+        font-size: 20px
+        line-height: 25px
+        color: $dark  
+        transition: 0.8s opacity
+    &__copter
+        opacity: 1
+        width: 100%  
+        transition: 0.8s opacity
+    &__characteristic
+        position: absolute
+        top: 0
+        left: 0
+        padding-top: 21px
+        padding-left: 33px
+        padding-right: 15px
+        max-height: 392px
+        overflow: scroll
+        opacity: 0
+        transition: 0.8s opacity
+        & h2
+            font-size: 16px
+            margin-bottom: 15px
+    &__property
+        margin-bottom: 15px
+        font-weight: 500
+        font-size: 14px
+        line-height: 20px
+        color: $dark
+        & span
+            font-weight: 700    
+    &__camera
+        display: flex
+        justify-content: space-between
+        padding: 13px 10px 12px 10px
+        background: $light
+        border-radius: 10px
+        align-items: center
+        font-weight: 500   
+        &--m600
+            justify-content: center
+.copter
+    width: 100%
+    min-height: 202px
+    object-fit: fill
+    object-position: center         
+.photocamera
+    text-align: center
+    h2
+        text-align: center
+        font-size: 14px
+        line-height: 18px
+        color: $dark  

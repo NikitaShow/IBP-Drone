@@ -1,0 +1,62 @@
+.btn
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-around
+    padding-left: 32px
+    width: 300px
+    height: 65px
+    border: none
+    outline: none
+    border-radius: 40px
+    background: linear-gradient(90deg, #FF401B 0%, #FF703F 100%)
+    box-shadow: 0px 11px 31px 1px rgba(255, 41, 0, 0.33)
+    z-index: 1
+    font-weight: 700
+    font-size: 16px
+    line-height: 20px
+    color: $white
+    text-transform: uppercase
+    cursor: pointer
+    &:hover
+        background: $pink
+        box-shadow: 0px 23px 25px -20px rgba(255, 112, 63, 0.2)  
+        color: $dark
+    &:hover .arrow
+        background-color: $dark
+    &:hover svg path
+        stroke: $pink 
+        fill: $pink
+    &:active
+        color: $primary    
+    &:active .arrow
+        background-color: $white
+    &:hover svg path
+        stroke: $primary
+        fill: $primary   
+    &--small
+        width: 150px
+        height: 55px
+        padding: 0
+        justify-content: center    
+    &--request
+        margin-right: 241px     
+
+.arrow
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    padding: 12px
+    width: 40px
+    height: 40px
+    background-color: $white
+    border-radius: 50%        
+svg
+    width: 30px
+    height: 30px
+svg path
+    stroke: $primary 
+    fill: $primary 
+        
+  
